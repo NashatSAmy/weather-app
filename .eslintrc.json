@@ -2,5 +2,6 @@
   "extends": ["eslint:recommended", "google", "prettier"],
   "rules": {
     // Additional, per-project rules...
-  }
+  },
+  "env": { "es7": true }
 }

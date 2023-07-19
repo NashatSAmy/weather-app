@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -16,6 +17,7 @@ module.exports = {
       title: 'Weather App',
       template: './src/template.html',
     }),
+    new FaviconsWebpackPlugin('./src/icons/favicon.png'),
   ],
   output: {
     filename: '[name].bundle.js',

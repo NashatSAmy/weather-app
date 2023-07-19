@@ -1,3 +1,11 @@
+(self["webpackChunkweather_app"] = self["webpackChunkweather_app"] || []).push([["mainPage"],{
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ (() => {
+
 const button = document.getElementById('getWeather');
 const controls = [...document.getElementsByClassName('mC')];
 let cMS = document.getElementsByClassName('active')[0].id; // Current Measurements System
@@ -117,3 +125,14 @@ button.addEventListener('click', updateCards);
 controls.forEach((control) =>
   control.addEventListener('click', changeMeasurementsSys)
 );
+
+
+/***/ })
+
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/main.js"));
+/******/ }
+]);
+//# sourceMappingURL=mainPage.bundle.js.map
